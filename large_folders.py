@@ -1,4 +1,8 @@
 #python large_folders.py "F:\IT" "01-01-2021" 2000 --file output-it-folder2.txt
+# Copyright (c) [2023] [Bora Noyan]
+# This file is part of [Find_Large_Old_Folders_Python].
+# Licensed under the GNU General Public License v3.0
+# See the LICENSE file in the project root for the full license text.
 
 import os
 import argparse
