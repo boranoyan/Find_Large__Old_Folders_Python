@@ -33,7 +33,7 @@ A user-friendly desktop application for Windows to find folders that are larger 
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    git clone [https://github.com/boranoyan/Find_Large__Old_Folders_Python.git(https://github.com/boranoyan/Find_Large__Old_Folders_Python.git)
     cd your-repo-name
     ```
 
