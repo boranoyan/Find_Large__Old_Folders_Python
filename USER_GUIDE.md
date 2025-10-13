@@ -12,7 +12,7 @@ GUI, feature enhancements, and bug fixes by Google's Gemini.
 
 This guide is perfect for end-users who want to understand how to use every feature of your application.
 
-```markdown
+
 # 📁 Folder Scanner Pro - User Guide
 
 Welcome to the Folder Scanner Pro! This guide will walk you through all the features of the application and help you get started with managing your disk space.
