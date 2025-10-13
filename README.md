@@ -1,70 +1,51 @@
-# Usage Documentation for `large_folders.py`
+# Find Large & Old/New Folders Utility
 
-## Overview
-This script is designed to recursively scan a specified directory and its subdirectories, identifying folders that are both older than a specified date and larger than a specified size. The results are saved to an output file.
+A user-friendly desktop application for Windows to find folders that are larger than a specified size and are either older or newer than a given date. This tool helps users identify large, forgotten folders or recently modified large directories to better manage disk space.
 
-## Command-line Arguments
 
-- **path**: The root directory to start the scan.
-- **date**: The reference date in `dd-mm-yyyy` format. Folders modified before this date will be considered.
-- **size**: The minimum size (in megabytes) of the folders to be considered.
-- **--file**: (Optional) The name of the file to save the results. If not specified, the default output file is `output.txt`.
-
-## Example Usage
-
-```sh
-python large_folders.py "F:\IT" "01-01-2021" 2000 --file output-it-folder2.txt
-```
-
-## Detailed Description
-
-- **path**: The script will start scanning from this root directory.
-- **date**: The script will convert this date to an epoch time and use it to compare the last modified times of folders.
-- **size**: The script will convert this size from megabytes to bytes for comparison.
-- **--file**: If provided, the script will save the results to this file. If not provided, it defaults to `output.txt`.
-
-## Functions
-
-### `convert_mb_to_bytes(mb)`
-Converts megabytes to bytes.
-
-### `convert_bytes_to_mb(bytes)`
-Converts bytes to megabytes.
-
-### `convert_date_to_epoch(date_string)`
-Converts a date string in `dd-mm-yyyy` format to epoch time.
-
-### `convert_epoch_to_date(epoch)`
-Converts epoch time to a date string in `dd-mm-yyyy` format.
-
-### `process_folder(folder_path, date, size, output_file)`
-Recursively processes folders starting from `folder_path`. Checks each folder's last modified date and size. If a folder is older than the given date and larger than the given size, it saves the folder's details to the output file.
-
-### `get_folder_size(folder_path, size)`
-Calculates the total size of a folder. If the size exceeds the specified size during calculation, it returns the size immediately.
-
-### `save_folder_to_file(folder_path, output_file, folder_date, folder_size)`
-Saves the details of a folder to the output file.
-
-## Script Execution
-
-The script begins by parsing the command-line arguments. It then converts the provided date and size to epoch time and bytes, respectively. If the date conversion fails, the script exits with an error message.
-
-The script then calls `process_folder` with the specified path, reference date, size, and output file. The `process_folder` function handles the recursive scanning and filtering of folders based on the date and size criteria. If a qualifying folder is found, its details are saved to the specified output file.
-
-## Important Notes
-
-- **Backup Warning**: Ensure you have a valid backup of your data before running this script.
-- **Disclaimer**: The script is provided as-is. The author takes no responsibility for any damage, data loss, or unintended consequences resulting from its use. Use at your own risk.
-
-## Contact Information
-
-- **Programmer**: Bora Noyan
-- **Contact**: bora@boranoyan.com
-- **Website**: www.boranoyan.com
-
-## License
-
-This script is licensed under the GNU General Public License v3.0. For the full license text, see the LICENSE file in the project root.
 
 ---
+
+## 🌟 Features
+
+-   **Combined Functionality**: Merges the logic of finding both old and recent large folders into a single application.
+-   **Intuitive GUI**: A clean and simple interface built with Tkinter, eliminating the need for command-line arguments.
+-   **Flexible Criteria**:
+    -   Select any target folder to scan recursively.
+    -   Use a calendar to easily pick a reference date.
+    -   Specify a minimum folder size in Megabytes (MB).
+    -   Choose to find folders **older** or **newer** than the reference date.
+-   **Real-Time Feedback**: A results panel displays findings as they occur, and a status bar shows the current activity.
+-   **Responsive & Stoppable**: The scanning process runs in a separate thread to keep the UI from freezing, and a "Stop Scan" button allows you to cancel the process at any time.
+-   **Save Results**: Easily save the scan results to a `.txt` file for later review.
+-   **Help & About**: Built-in documentation explains how to use the app and provides important disclaimers.
+
+---
+
+## 🛠️ Setup and Usage
+
+### Prerequisites
+
+-   Python 3.x
+-   Windows Operating System (The script relies on Windows-specific path-handling, especially regarding long path names).
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    cd your-repo-name
+    ```
+
+2.  **Install the required Python library:**
+    The application uses `tkcalendar` for the date-picker widget. Install it using pip:
+    ```bash
+    pip install tkcalendar
+    ```
+
+### Running the Application
+
+Execute the script from your terminal:
+
+```bash
+python folder_scanner_app.py
