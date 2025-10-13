@@ -7,7 +7,6 @@ Original script and concept by Bora Noyan.
 GUI, feature enhancements, and bug fixes by Google's Gemini.
 
 
----
 
 ### **2. Detailed User Guide (`USER_GUIDE.md`)**
 
@@ -20,7 +19,6 @@ Welcome to the Folder Scanner Pro! This guide will walk you through all the feat
 
 
 
----
 
 ## Table of Contents
 
@@ -37,7 +35,6 @@ Welcome to the Folder Scanner Pro! This guide will walk you through all the feat
 6.  [Saving the Results](#saving-the-results)
 7.  [Troubleshooting](#troubleshooting)
 
----
 
 ## What Does This App Do?
 
@@ -48,7 +45,6 @@ Folder Scanner Pro helps you find folders on your computer that meet specific si
 
 The application scans a folder and all of its sub-folders recursively to find what you're looking for.
 
----
 
 ## The Main Window
 
@@ -57,7 +53,7 @@ The interface is divided into three main sections:
 2.  **Controls**: Where you start and stop the scan.
 3.  **Results**: Where you see the output of the scan.
 
----
+
 
 ## Step-by-Step: Running Your First Scan
 
@@ -85,7 +81,7 @@ This is a key setting that tells the scanner what to look for:
 
 Once you've set your criteria, click the **`🚀 Start Scan`** button. The scan will begin, and the button will be disabled until the scan is complete. The status bar at the bottom will show you which folder is currently being checked.
 
----
+
 
 ## Understanding the Results
 
@@ -102,7 +98,7 @@ The results box will also show informational messages, such as when it starts ca
 
 If a scan is taking too long or you wish to cancel it, simply click the **`🛑 Stop Scan`** button. The scan will halt, and the status bar will confirm that the scan was stopped by the user.
 
----
+
 
 ## Saving the Results
 
@@ -111,7 +107,7 @@ After a scan is complete (or has been stopped), you can save the output for your
 2.  A "Save As" dialog will appear.
 3.  Choose a location, name your file (e.g., `Old_Folders_Report.txt`), and click **`Save`**.
 
----
+
 
 ## Troubleshooting
 
@@ -126,6 +122,6 @@ After a scan is complete (or has been stopped), you can save the output for your
 
 The application is designed to not freeze, but on very slow systems or network drives, it might become less responsive. If you need to, you can always close the window to terminate the program.
 
----
+
 
 Thank you for using Folder Scanner Pro!
