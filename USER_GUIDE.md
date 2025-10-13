@@ -8,8 +8,6 @@ GUI, feature enhancements, and bug fixes by Google's Gemini.
 
 
 
-### **2. Detailed User Guide (`USER_GUIDE.md`)**
-
 This guide is perfect for end-users who want to understand how to use every feature of your application.
 
 
